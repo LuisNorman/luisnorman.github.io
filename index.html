@@ -1,147 +1,147 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Luis Norman's Portfolio</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Luis Norman — Software Engineer</title>
+</head>
+<body>
 
-  <p style="font-size: 12px;">Last updated: February 9th, 2021</p>
-
-    <!--GREETING-->
-    <section>
-      <div class="greeting">
-    		<h1 style="font-style: italic;">Hi, i'm Luis!</h1>
-    		<div class="contact" style="margin-bottom: 20px;">
-      	<table style="align=center; margin: 0px auto; margin-top: -10px;">
-  	  		<th style="padding:0 50px 0 0">Email</th>
-  	  		<th style="padding:0 50px 0 0">Github</th>
-  	  		<tr>
-  	  			<td style="padding:0 50px 0 0"><u><a href = "mailto: Lanorman14@gmail.com">Lanorman14@gmail.com</a></u></td>
-  	  			<td style="padding:0 0 0 0"><u><a href="https://www.GitHub.com/LuisNorman" target="_blank">GitHub.com/LuisNorman</a></u></td>
-  	  		</tr>
-  	  	</table>
-      </div>
-      <!--IMAGE on second row-->
-      <img src="LinkedInImage.jpg" width="600" height="400" class="profile_image">
-      </div>
-    </section>
-
-
-
-    <!--ABOUT ME-->
-    <div class=introduction>
-    	<h1 style="font-style: italic; margin-top: 50px;">About Me</h1>
-      <hr style="margin-top: -15px;">
-      <div style="display:inlisne-block">
-    	   <p style=" margin-top: 7.5px; float:left; width: 100%;">Graduate student at DePaul University studying Computer Science with a specialization in Software and Systems Development and Data Science. </p>
-
-      	<p style="margin-top: 0px; float:left; width: 100%;"> Experienced in full-stack web development, iOS development, and building predictive models and distributed systems. </p>
-
-        <p style="margin-top: 0px; float:left; width: 100%;"> Adept at analyzing and optimizing existing software that exhibits performance issues related to processor caching, data layout, and unintended compiler interactions. </p>
-       </div>
-    </div>
-
-    <!--EDUCATION-->
-    <div class="education">
-    	<h1 style="font-style: italic; margin-top: 20px; margin-bottom: -1px;">Education</h1>
-      <hr>
-      <table style="margin: 0 auto">
-        <th style="padding:0 0 0 0; "><u><b><p><a href="https://www.cdm.depaul.edu/academics/Pages/current/Requirements-MS-in-Computer-Science.aspx" target="_blank">DePaul University</a><p></b></u></th>
-        <th style="padding:0 0 0 50px"><u><b><p><a href="https://www.pnw.edu/program-finder/computer-engineering-bscmpe/" target="_blank">Purdue University Northwest</a><p></b></u></th>
-
-        <tr>
-          <td  style="padding:0 0 0 0"><p style="margin-top:-1px; text-align: center;">Master of Science in Computer Science, 2021</p></td>
-          <td style="padding:0 0 0 50px"><p style="margin-top:-1px; text-align: center;">Bachelor of Science in Computer Engineering, 2018</p></td>
-        </tr>
-
-        <tr>
-          <td style="padding:0 0 0 0;"><p style="margin-top:-1px; text-align: center;">Specializations: Software and Systems Development and Data Science</p></td>
-          <td style="padding:0 0 0 50px"><p style="margin-top:-1px; text-align: center;">Minor: Computer Science</p></td>
-        </tr>
-
-        <tr>
-          <td style="padding:0 0 0 50px"><p style="margin-top:-1px; text-align: center;">Cumulative GPA: 3.87/4.00</p></td>
-          <td style="padding:0 0px 0 50px"><p style="margin-top:-1px; text-align: center;">Major GPA: 3.31/4.00</p></td>
-        </tr>
-
-      </table>
-    </div>
-
-
-    <!--EXPERIENCE-->
-    <div class="experience" id="experience">
-    	<h1 style="font-style: italic; margin-top: 20px; margin-bottom: -1px;">Work Experience</h1>
-      <hr>
-      <div style="display: inline-block;">
-      	<u><b><p style="margin-top: 10px; "><a href="http://www.silverworksolutions.com/" target="_blank">Silverwork Solutions - Chicago, IL</a><p></b></u>
-        <p style="font-size:16px; margin-top:-10px;">May 2018 - July 2019</p>
-      	<li style="float: left; width: 100%;"> Developed scalable and highly available software services to automate the mortgage preapproval process.</li>
-  		  <li style="margin-top: 15px; float:left; width: 100%;"> Refactored a monolithic system into a service-oriented architecture resulting in a 4x speed increase and resilience.</li>
-        <li style="margin-top: 15px; float:left; width: 100%;"> Built tools to monitor and recover downed nodes (machines and services) in a distributed system.</li>
-  		  <li style="margin-top: 15px; float:left; width: 100%;"> Created and automated daily reports of service transactions and other key performance indicators (KPI’s) that were delivered to the company’s stakeholders.</li>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Luis Norman</h1>
+      <p class="hero-title">Software Engineer &nbsp;·&nbsp; Search Infrastructure &nbsp;·&nbsp; Distributed Systems</p>
+      <div class="hero-links">
+        <a href="mailto:Lanorman14@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/luisnorman" target="_blank">LinkedIn</a>
+        <a href="https://github.com/LuisNorman" target="_blank">GitHub</a>
       </div>
     </div>
+  </header>
 
-    <!--PROJECTS-->
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>About</h2>
+    <p>Software Engineer with 6+ years of experience, including 4+ years on Amazon Music's Core Services search platform serving 80M+ global listeners. I specialize in search indexing, ranking, and relevance — building systems that operate at scale, reduce latency, and improve the quality of results people actually see. My work spans event-driven architectures, distributed ingestion pipelines, and A/B-validated ranking signal improvements in Java on AWS.</p>
+  </section>
 
-    <div class="projects" style="margin-top: 40px;">
-    	<h1 style="font-style: italic; margin-bottom: -1px; ">Projects</h1>
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <h2>Experience</h2>
 
-      <hr>
-
-      <div style="display:inline-block;">
-    	    <u><b><p style="margin-top: 7.5px;">Chicago Apartment Marketplace</p></b></u>
-    	    <li style="float:left;"><b>Description:</b> Currently building an apartment marketplace platform where visitors can search for homes and landlords/leasing agents can post apartment listings.   </li>
-          <li style="margin-top: 15px; float:left;width: 100%;"><b>Tools Used:</b> Django, React</li>
-      </div>
-
-      <div style="display:inline-block;">
-    	    <u><b><p style="margin-top: 40px;">Custom Memory Manager</p></b></u>
-    	    <li style="float:left;"><b>Description:</b> Implemented a custom memory manager that replaces the standard library memory manager which resulted in a 3.5x speed increase.  </li>
-          <li style="margin-top: 15px; float:left;width: 100%;"><b>Tools Used:</b> C++</li>
-      </div>
-
-      <div style="display:inline-block;">
-    	    <u><b><p style="margin-top: 40px;"><a href="https://github.com/LuisNorman/DJIA-Prediction-Sysem" target="_blank">Dow Jones Closing Price Prediction System</a></p></b></u>
-    	    <li style="float:left;"><b>Description:</b> Developed a sentiment analyzer that converts trending article headlines into their respective sentiment labels and ran various machine learning algorithms on those sentiment labels to create models that predict the behavior of the DJIA closing price.</li>
-		      <li style="margin-top: 15px; float:left;  width: 100%;"><b>Tools Used:</b> NLP, Support Vector Machines, Logistic Regression, Decision Trees, Naïve Bayes</li>
-      </div>
-
-      <div style="display:inline-block">
-		      <u><b><p style="margin-top: 40px;"><a href="https://github.com/LuisNorman/Blockchain" target="_blank">Blockchain for Medical Records</a></p></b></u>
-    	    <li style="float:left"><b>Description:</b> Created a program that starts processes forming a distributed system that then begins to compete with each other across the network to mine and verify blocks (medical records) before being added to the ledger.</li>
-		      <li style="margin-top: 15px; float:left; width: 100%;"><b>Tools Used:</b> Inter-Process Communication, Cryptography, Multithreading, Peer-to-Peer Networking</li>
-      </div>
-
-        <div style="display:inline-block">
-		      <u><b><p style="margin-top: 40px;"><a href="https://github.com/LuisNorman/Cinema-Recommender" target="_blank">Movie Recommendation Web Application</a></p></b></u>
-    	    <li style="float:left;"><b>Description:</b> Built a web application that recommends movies that have the highest predicted ratings based on the target user’s rated movies and those of their top K similar users.</li>
-		      <li style="margin-top: 15px; float: left; width: 100%;"><b>Tools Used:</b> Collaborative Filtering (User-Based & Item-Based), K-Nearest Neighbor, Flask</li>
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <span class="company">Amazon Music</span>
+          <span class="location">San Francisco, CA</span>
         </div>
-
+        <span class="dates">March 2022 – Present</span>
+      </div>
+      <p class="role">Software Development Engineer · Core Services Search</p>
+      <ul>
+        <li>Designed and built an event-driven data consistency service (SNS/SQS/Lambda) that decoupled search result validation from the request path, reducing p99 search latency by ~23% across all regions for 80M+ global listeners. The service processes 25K+ events/sec and triggers automatic reindexing when results diverge from authority sources.</li>
+        <li>Owned a search diversification feature that fixed a position bias in click-based popularity by marking the most authoritative track per trackset at ingestion and switching ranking to label-provided signals. A/B tested over 14 days and improved search precision 7pp (52% to 59%) for 30M+ North American listeners with no recall regression.</li>
+        <li>Re-architected Amazon Music's document ingestion system from a legacy self-hosted fleet to OpenSearch Ingestion (OSI), leading 2 engineers to build a router for index coordination and a pipeline-per-cluster design for multi-cluster fan-out and JOLT-based document transformation. Cut backfill indexing time by ~64% (18hrs → 6.5hrs) and introduced elastic auto-scaling.</li>
+        <li>Migrated the Voice and Library platforms off a legacy monolithic core search service onto a new microservices architecture, coordinating across platform teams to update API contracts and resolve client compatibility issues.</li>
+        <li>Built an internal admin tool for manually indexing documents to search clusters, used company-wide to resolve search visibility issues and reduce on-call burden.</li>
+        <li>Serve as rotating on-call engineer for the core search platform, managing high-severity incidents for 80M+ global listeners.</li>
+      </ul>
     </div>
 
-    <!--SKILLS-->
-    <div class="skills">
-    	<h1 style="font-style: italic; margin-top: 50px;">Technical Skills</h1>
-      <hr style="margin-top: -20px">
-      <div style="display: inline-block;">
-      	<li style="float: left; margin-top: 7.5px; width: 100%;"><b>Programming Languages:</b> C/C++, Java, Python, Scala, Swift, SQL, JavaScript, HTML5, CSS3</li>
-        <li style="margin-top: 15px; float: left; width: 100%;"><b>Web Development</b> Django, React, PostgreSQL, REST, Bootstrap</li>
-        <li style="margin-top: 15px; float: left; width: 100%;"><b>Mobile Development:</b> SwiftUI, UIKit, CoreML, Networking, ARC, Realm</li>
-        <li style="margin-top: 15px; float: left; width: 100%;"><b>Distributed Systems:</b> Inter-Process Communication, Cryptography, Transparency, Mobile IP, Superservers </li>
-        <li style="margin-top: 15px; float: left; width: 100%;"><b>Machine Learing:</b> Prediction Modeling, Intelligent Information Retrieval, Recommender Systems</li>
-        <li style="margin-top: 15px; float: left; width: 100%;"><b>Other:</b> SIMD Intrinsics, TensorFlow, MapReduce, Hot/Cold Data Structures, Profiling, UML, Continuous Integration</li>
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <span class="company">Cisco Systems</span>
+          <span class="location">San Jose, CA</span>
+        </div>
+        <span class="dates">July 2021 – March 2022</span>
+      </div>
+      <p class="role">Software Engineer</p>
+      <ul>
+        <li>Built an automated CI/CD fleet that provisioned clean APIC simulator environments with full fabric topology on every code review submission and delivered results via multi-channel notifications, shifting testing from a manual, once-per-sprint process to every PR with zero human involvement.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <span class="company">Silverwork Solutions</span>
+          <span class="location">Chicago, IL</span>
+        </div>
+        <span class="dates">May 2018 – July 2019</span>
+      </div>
+      <p class="role">Software Engineer</p>
+      <ul>
+        <li>Joined as one of the founding engineers (4th hire), led design sessions with client stakeholders to define requirements, and built core mortgage lending automation software that helped scale the company from 4 to 20+ employees.</li>
+        <li>Designed and built an SMS-driven mortgage automation service that allowed lenders to initiate and advance loan applications via text, creating a fully desk-free lending workflow with no manual processing steps.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <p class="project-title"><a href="https://github.com/LuisNorman/Blockchain" target="_blank">Blockchain for Medical Records</a></p>
+      <p>Built a distributed system where processes compete across a network to mine and verify blocks (medical records) before being added to a ledger. Implemented from scratch using inter-process communication, cryptography, multithreading, and peer-to-peer networking.</p>
+      <p class="tags">IPC &nbsp;·&nbsp; Cryptography &nbsp;·&nbsp; Multithreading &nbsp;·&nbsp; P2P Networking</p>
+    </div>
+
+    <div class="card">
+      <p class="project-title">Custom Memory Manager</p>
+      <p>Implemented a custom memory manager in C++ that replaces the standard library allocator, achieving a 3.5x speed increase through optimized allocation strategies and cache-aware data layout.</p>
+      <p class="tags">C++ &nbsp;·&nbsp; Memory Management &nbsp;·&nbsp; Performance Optimization</p>
+    </div>
+
+    <div class="card">
+      <p class="project-title"><a href="https://github.com/LuisNorman/Cinema-Recommender" target="_blank">Movie Recommendation System</a></p>
+      <p>Built a web application that recommends movies using collaborative filtering (user-based and item-based) and K-nearest neighbor, generating personalized recommendations based on a target user's ratings and their top-K similar users.</p>
+      <p class="tags">Collaborative Filtering &nbsp;·&nbsp; KNN &nbsp;·&nbsp; Flask &nbsp;·&nbsp; Recommendation Systems</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <p class="skill-label">Languages</p>
+        <p class="skill-value">Java (primary), C++, Python</p>
+      </div>
+      <div>
+        <p class="skill-label">Cloud & Infrastructure</p>
+        <p class="skill-value">AWS (ECS, Lambda, DynamoDB, S3, OpenSearch, CloudWatch, SNS, SQS)</p>
+      </div>
+      <div>
+        <p class="skill-label">Specialties</p>
+        <p class="skill-value">Large-Scale Search Infrastructure, Distributed Systems, Event-Driven Architecture, High-Availability Systems, Ranking & Relevance</p>
       </div>
     </div>
+  </section>
 
+  <!-- EDUCATION -->
+  <section class="section">
+    <h2>Education</h2>
 
-    <!--FOOTER-->
-<div style="margin-bottom: 50px;">
-    <h2 style="margin-top: 45px; text-align:center;">Click <u><a href="LuisNormanResume.pdf" target="_blank">here</a></u> to view the pdf format of my resume.</h2>
-</div>
+    <div class="card">
+      <div class="card-header">
+        <span class="company">DePaul University</span>
+        <span class="dates">June 2021</span>
+      </div>
+      <p class="role">M.S. in Computer Science &nbsp;·&nbsp; Full-time student, 2019–2021</p>
+    </div>
 
-  </body>
+    <div class="card">
+      <div class="card-header">
+        <span class="company">Purdue University Northwest</span>
+        <span class="dates">May 2018</span>
+      </div>
+      <p class="role">B.S. in Computer Engineering &nbsp;·&nbsp; Minor: Computer Science</p>
+    </div>
+  </section>
+
+</body>
 </html>

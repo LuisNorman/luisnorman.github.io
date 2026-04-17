@@ -1,98 +1,203 @@
-.profile_image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid #555;
-}
-
-/*image and name display*/
-.greeting {
-  margin: 0 auto;
-	font-size: 20px;
-	text-align: center;
-}
-
-/*about me*/
-.introduction {
-	margin: 0 auto;
-	font-size: 20px;
-	width: 90%;
-
-}
-
-.education {
-	margin: 0 auto;
-	font-size: 20px;
-	width: 90%;
-	/*margin-left: 40px;*/
-
-}
-
-
-.experience {
-	margin: 0 auto;
-	font-size: 20px;
-	width: 90%;
-	/*margin-left: 40px;*/
-
-}
-
-div#experience il {
-	margin-bottom: 100px;
-}
-
-
-.projects {
-  margin: 0 auto;
-	font-size: 20px;
-  /* float:left; */
-	/* text-align: center; */
-	width: 90%;
-}
-
-.skills {
-	margin: 0 auto;
-	font-size: 20px;
-	/* text-align: center; */
-	width: 90%;
-}
-
-.contact {
-	margin: 0 auto;
-	font-size: 20px;
-	width: 90%;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background-color: rgb(  245, 246, 247);
-	font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  color: #1a1a2e;
+  line-height: 1.7;
 }
 
-a:link {
-  /* color: rgb(43, 80, 143); */
-  color: rgb(0, 0, 0);
+/* HERO */
+.hero {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
 
-  background-color: transparent;
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 18px;
+  color: #a0aec0;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.hero-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 2px;
+  transition: border-color 0.2s;
+}
+
+.hero-links a:hover {
+  border-color: #fff;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 860px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.section h2 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #718096;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.section > p {
+  font-size: 17px;
+  color: #2d3748;
+  line-height: 1.8;
+}
+
+/* CARDS */
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin-bottom: 16px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.company {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.location {
+  font-size: 14px;
+  color: #718096;
+  margin-left: 10px;
+}
+
+.dates {
+  font-size: 14px;
+  color: #718096;
+  white-space: nowrap;
+}
+
+.role {
+  font-size: 14px;
+  color: #4a5568;
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.card ul {
+  padding-left: 18px;
+}
+
+.card ul li {
+  font-size: 15px;
+  color: #2d3748;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* PROJECTS */
+.project-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.project-title a {
+  color: #1a1a2e;
   text-decoration: none;
 }
-a:visited {
-  /* color: rgb(24, 54, 94); */
-  /* color: gray; */
-  color: rgb(0, 0, 0);
 
-  background-color: transparent;
-  text-decoration: none;
+.project-title a:hover {
+  color: #4a5568;
 }
+
+.card > p {
+  font-size: 15px;
+  color: #2d3748;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.tags {
+  font-size: 13px;
+  color: #718096;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.skills-grid div {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.skills-grid .skill-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.skills-grid .skill-value {
+  font-size: 15px;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* LINKS */
+a:link, a:visited {
+  color: #1a1a2e;
+}
+
 a:hover {
-  color: rgb(187, 190, 191);
-
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: rgb(187, 190, 191);
-
-  background-color: transparent;
+  color: #4a5568;
   text-decoration: underline;
 }
