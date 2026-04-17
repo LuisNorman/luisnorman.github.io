@@ -45,16 +45,19 @@ body {
 }
 
 .hero-links a {
-  color: #fff;
+  color: #1a1a2e;
+  background-color: #fff;
   text-decoration: none;
-  font-size: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding-bottom: 2px;
-  transition: border-color 0.2s;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .hero-links a:hover {
-  border-color: #fff;
+  background-color: #e2e8f0;
+  color: #1a1a2e;
 }
 
 /* SECTIONS */
