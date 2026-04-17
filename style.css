@@ -81,6 +81,27 @@ body {
   line-height: 1.8;
 }
 
+.about-grid {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #e2e8f0;
+}
+
+.about-grid p {
+  font-size: 17px;
+  color: #2d3748;
+  line-height: 1.8;
+}
+
 /* CARDS */
 .card {
   background: #fff;
