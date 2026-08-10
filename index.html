@@ -25,7 +25,7 @@
   <!-- ABOUT -->
   <section class="section">
     <h2>About</h2>
-    <p>Software Engineer with 6+ years of experience, including 4+ years on Amazon Music's Core Services search platform serving 80M+ global listeners. I specialize in search indexing, ranking, and relevance — building systems that operate at scale, reduce latency, and improve the quality of results people actually see. My work spans event-driven architectures, distributed ingestion pipelines, and A/B-validated ranking signal improvements in Java on AWS.</p>
+    <p>Software engineer with 6+ years building search infrastructure, including 4+ years on Amazon Music's core search platform team serving 80M+ global listeners. Built an asynchronous reconciliation pipeline on SNS/SQS/Lambda sustaining ~45K events/sec that cut p99 search latency 20–25% by removing synchronous validation from the read path. Led the ingestion workflow rebuild that cut full-catalog backfill time 60% and infrastructure cost ~33%. Shipped a search-side filter that surfaced the authoritative track variant per trackset, lifting precision by 7 percentage points.</p>
   </section>
 
   <!-- EXPERIENCE -->
@@ -40,14 +40,12 @@
         </div>
         <span class="dates">March 2022 – Present</span>
       </div>
-      <p class="role">Software Development Engineer · Core Services Search</p>
+      <p class="role">Software Development Engineer II · Core Services Search</p>
       <ul>
-        <li>Designed and built an event-driven data consistency service (SNS/SQS/Lambda) that decoupled search result validation from the request path, reducing p99 search latency by 20–25% across all regions for 80M+ global listeners. The service processes ~23K events/sec at peak and triggers automatic reindexing when results diverge from authority sources.</li>
-        <li>Owned a search diversification feature that fixed a position bias in consumption-based popularity by marking the most authoritative track per trackset at ingestion and switching ranking to label-provided signals. A/B tested over 14 days and improved search precision 7pp (52% to 59%) for 50M+ North American listeners with no recall regression.</li>
-        <li>Re-architected Amazon Music's document ingestion system from a legacy self-hosted fleet to OpenSearch Ingestion (OSI), leading 2 engineers to build a router for index coordination and a pipeline-per-cluster design for multi-cluster fan-out and JOLT-based document transformation. Cut backfill indexing time by ~60% (16hrs → 6.5hrs) and introduced elastic auto-scaling.</li>
-        <li>Migrated the Voice and Library platforms off a legacy monolithic core search service onto a new microservices architecture, coordinating across client teams to update API contracts and resolve compatibility issues.</li>
-        <li>Built an internal admin tool for manually indexing documents to search clusters, used company-wide to resolve search visibility issues and reduce on-call burden.</li>
-        <li>Serve as rotating on-call engineer for the core search platform, managing high-severity incidents for 80M+ global listeners.</li>
+        <li>Redesigned Amazon Music's search consistency after finding the read path was silently dropping stale items when catalog notifications got lost. Built an async reconciliation pipeline that detects divergences and triggers targeted reindexing. Cut p99 20–25% for 80M+ global listeners at ~45K events/sec on SNS/SQS/Lambda.</li>
+        <li>Diagnosed and fixed a search bug where less authoritative track variants were surfacing over the canonical version, by marking the authoritative variant at ingestion and adding a search-side filter on that field. A/B tested globally over 14 days, lifting precision by 7 percentage points for 50M+ North American listeners with no recall regression.</li>
+        <li>Designed and led the re-architecture of Amazon Music's document ingestion system from a legacy self-hosted fleet to OpenSearch Ingestion (OSI), building a per-cluster pipeline with index routing and JOLT-based document transformation alongside 8 engineers. Cut full-catalog backfill time ~60% (5 days → 2 days) and infrastructure cost ~33%.</li>
+        <li>Built an internal admin tool for on-demand document indexing that replaced a manual runbook (SSH into a tools host, run ad-hoc scripts) with a self-serve interface used across engineering and content teams to push time-sensitive updates into search.</li>
       </ul>
     </div>
 
@@ -59,9 +57,9 @@
         </div>
         <span class="dates">July 2021 – March 2022</span>
       </div>
-      <p class="role">Software Engineer</p>
+      <p class="role">Software Engineer II</p>
       <ul>
-        <li>Built an automated CI/CD fleet that provisioned clean APIC simulator environments with full fabric topology on every code review submission and delivered results via multi-channel notifications. Shifted testing from a manual, once-per-sprint process to every PR with zero human involvement.</li>
+        <li>Built per-PR CI infrastructure that provisioned APIC simulator fabrics on demand, replacing a manual, sprint-cadence test process.</li>
       </ul>
     </div>
 
@@ -75,8 +73,8 @@
       </div>
       <p class="role">Software Engineer</p>
       <ul>
-        <li>Joined as one of the founding engineers (4th hire), led design sessions with client stakeholders to define requirements, and built core mortgage lending automation software that helped scale the company from 4 to 20+ employees.</li>
-        <li>Designed and built an SMS-driven mortgage automation service that allowed lenders to initiate and advance loan applications via text, creating a fully desk-free lending workflow with no manual processing steps.</li>
+        <li>Joined as the 4th engineer, working directly with clients to shape product requirements and building the core mortgage lending platform that grew the company from 4 to 20+ employees.</li>
+        <li>Built an SMS-based mortgage system that shifted the entire loan workflow from desktop to phone, letting lenders process loan applications by text from anywhere.</li>
       </ul>
     </div>
   </section>
@@ -110,15 +108,15 @@
     <div class="skills-grid">
       <div>
         <p class="skill-label">Languages</p>
-        <p class="skill-value">Java (primary), C++, Python</p>
+        <p class="skill-value">Java (Guice), Python</p>
       </div>
       <div>
-        <p class="skill-label">Cloud & Infrastructure</p>
-        <p class="skill-value">AWS (ECS, Lambda, DynamoDB, S3, OpenSearch, CloudWatch, SNS, SQS)</p>
+        <p class="skill-label">Data & Search</p>
+        <p class="skill-value">OpenSearch/Elasticsearch, OpenSearch Ingestion (OSI), DynamoDB, S3, JOLT</p>
       </div>
       <div>
-        <p class="skill-label">Specialties</p>
-        <p class="skill-value">Large-Scale Search Infrastructure, Distributed Systems, Event-Driven Architecture, High-Availability Systems, Ranking & Relevance</p>
+        <p class="skill-label">AWS</p>
+        <p class="skill-value">Lambda, ECS (Docker), Fargate, SNS, SQS, Kinesis, CloudWatch, IAM, KMS, CDK, CloudFormation</p>
       </div>
     </div>
   </section>
@@ -130,15 +128,15 @@
     <div class="card">
       <div class="card-header">
         <span class="company">DePaul University</span>
-        <span class="dates">June 2021</span>
+        <span class="dates">2019 – 2021</span>
       </div>
-      <p class="role">M.S. in Computer Science &nbsp;·&nbsp; Full-time student, 2019–2021</p>
+      <p class="role">M.S. in Computer Science</p>
     </div>
 
     <div class="card">
       <div class="card-header">
         <span class="company">Purdue University Northwest</span>
-        <span class="dates">May 2018</span>
+        <span class="dates">2018</span>
       </div>
       <p class="role">B.S. in Computer Engineering &nbsp;·&nbsp; Minor: Computer Science</p>
     </div>
